@@ -14,6 +14,6 @@ COPY --from=API_BUILDER /usr/src/sqs_demo/backend/dist ./dist
 COPY --from=API_BUILDER /usr/src/sqs_demo/backend/node_modules ./node_modules
 COPY ./backend/package.json ./package.json
 
-EXPOSE 3000
+EXPOSE 3001
 
 CMD ["node", "dist/main"]
