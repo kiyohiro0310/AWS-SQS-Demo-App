@@ -10,7 +10,7 @@ services:
       - "3001:3001"
     environment:
       - NODE_ENV=production
-      - PORT=3000
+      - PORT=3001
       - FRONTEND_ORIGIN=http://localhost
       # AWS SQS Configuration
       - AWS_REGION=${AWS_REGION:-ap-southeast-2}
